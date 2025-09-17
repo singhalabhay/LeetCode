@@ -17,20 +17,3 @@ public:
     return candidate;
   }
 };
-
-// class Solution {
-// public:
-//     int majorityElement(vector<int>& nums) {
-//         int n = nums.size();
-//         int count = 0, ans = nums[0];
-
-//         for (int i = 0; i + 1 < n; i += 2) {   // ✅ fix: i+1 < n
-//             if (nums[i] == nums[i + 1]) {
-//                 count++;
-//                 ans = nums[i];
-//             }
-//         }
-
-//         return ans;
-//     }
-// };
